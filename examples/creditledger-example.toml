@@ -1,0 +1,40 @@
+[release]
+title = "Example Release"
+primary_artist = "Example Artist"
+requirements_basis = "Credits and allocation values assembled for collaborator review; verify every field independently before external use."
+
+[[contributors]]
+id = "artist-a"
+name = "Artist A"
+
+[[contributors]]
+id = "artist-b"
+name = "Artist B"
+
+[[tracks]]
+id = "opening-signal"
+number = 1
+title = "Opening Signal"
+
+[[credits]]
+track_id = "opening-signal"
+contributor_id = "artist-a"
+role = "Production"
+
+[[credits]]
+track_id = "opening-signal"
+contributor_id = "artist-b"
+role = "Writing"
+
+# Category labels are your own declarations. Creditledger checks arithmetic only.
+[[allocations]]
+track_id = "opening-signal"
+category = "Composition"
+contributor_id = "artist-a"
+percentage = 50
+
+[[allocations]]
+track_id = "opening-signal"
+category = "Composition"
+contributor_id = "artist-b"
+percentage = 50
